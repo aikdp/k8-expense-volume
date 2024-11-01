@@ -12,9 +12,9 @@ spec:
     component: mysql
     tier: db
   ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
+  - protocol: TCP
+    port: 3306
+    targetPort: 3306
 ---
 apiVersion: v1
 kind: Service   #noraml service
@@ -27,9 +27,9 @@ spec:
     component: mysql
     tier: db
   ports:
-    - protocol: TCP
-      port: 3306
-      targetPort: 3306
+  - protocol: TCP
+    port: 3306
+    targetPort: 3306
 ---
 #ADd statefulset code
 
